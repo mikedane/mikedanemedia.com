@@ -51,17 +51,22 @@
         animation-name: animate-pop;
         animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
       }
+      .soundcloud-info {
+        font-size: 14px;
+        font-style: italic;
+        color: lightgray;
+      }
       #contact-button {
         background: #2acdb0;
         box-shadow: 3px 3px 0px #1c1917;
         width: 150px;
-        text-decoration: none;
+        flex-shrink: 0;
         height: 2rem;
         border-radius: 1rem;
+        text-decoration: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-shrink: 1;
         font-weight: bold;
         font-size: 18px;
         color: #1c1917;
@@ -133,9 +138,25 @@
             working to build relationships with clients once he's earned their
             trust.
           </p>
-          <a id="contact-button" href="mailto: mike@mikedanemedia.com"
-            >Contact Mike</a
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
           >
+            <a id="contact-button" href="mailto: mike@mikedanemedia.com"
+              >Email Mike</a
+            >
+            <div style="margin: 0px 5px; min-width: 100px">or join him on</div>
+            <a
+              style="text-decoration: none"
+              href="https://www.fiverr.com/gra8dane"
+              target="_blank"
+            >
+              <img src="fiverr.png" width="100px" alt="fiverr" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="section-soundcloud">
@@ -149,6 +170,7 @@
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574784421&color=%232acdb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
+        <div class="soundcloud-info">Commercials</div>
       </div>
     </section>
 
@@ -182,6 +204,9 @@
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574785759&color=%232acdb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
+        <div class="soundcloud-info">
+          Corporate Narration, eLearning, Explainers
+        </div>
       </div>
       <div class="section-info">
         <div>
@@ -250,18 +275,20 @@
       </div>
     </section>
     <section>
-      <div style="padding: 25px">mike@mikedanemedia.com</div>
+      <div style="padding: 25px">
+        <a style="color: white" href="mailto: mike@mikedanemedia.com"
+          >mike@mikedanemedia.com</a
+        >
+      </div>
+      <div>
+        <a
+          style="text-decoration: none"
+          href="https://www.fiverr.com/gra8dane"
+          target="_blank"
+        >
+          <img src="fiverr.png" width="100px" alt="fiverr" />
+        </a>
+      </div>
     </section>
   </body>
 </html>
-
-<!-- <iframe
-style="box-shadow: 5px 5px 0px #1c1917"
-class="soundcloud"
-width="100%"
-height="400px"
-scrolling="no"
-frameborder="no"
-allow="autoplay"
-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574785759&color=%23265721&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-></iframe> -->
