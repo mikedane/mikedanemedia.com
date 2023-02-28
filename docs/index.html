@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=fallback"
       rel="stylesheet"
     />
     <style>
@@ -19,7 +19,10 @@
         color: white;
         margin: 0px;
         background: #1a202c;
-        font-family: "Source Code Pro", monospace;
+        font-family: "Source Code Pro", "Sans Serif", Courier, monospace;
+        animation-duration: 1s;
+        animation-name: animate-fade-in;
+        animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
       }
       div {
         box-sizing: border-box;
@@ -112,15 +115,46 @@
           transform: scale(1, 1);
         }
       }
+      @keyframes animate-fade-in {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+      #profile-picture {
+        width: 100px;
+        border-radius: 100%;
+        /* box-shadow: 2px 2px 0px #2acdb0; */
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-right: 15px;
+      }
     </style>
   </head>
   <body>
     <section style="padding-top: 30px; padding-bottom: 40px">
       <div class="section-info">
         <header>
-          <div style="flex-grow: 1">
-            <h1 id="heading">MIKE DANE</h1>
-            <h2 id="sub-heading">VOCAL TALENT</h2>
+          <div
+            style="
+              flex-grow: 1;
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+            "
+          >
+            <img
+              id="profile-picture"
+              src="profile.jpeg"
+              alt="profile picture"
+            />
+            <div>
+              <h1 id="heading">MIKE DANE</h1>
+              <h2 id="sub-heading">VOCAL TALENT</h2>
+            </div>
           </div>
         </header>
 
