@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=fallback"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=fallback"
       rel="stylesheet"
     />
     <style>
@@ -19,7 +19,8 @@
         color: white;
         margin: 0px;
         background: #1a202c;
-        font-family: "Source Code Pro", "Sans Serif", Courier, monospace;
+        font-size: 18px;
+        font-family: "Roboto", "Sans Serif", Courier, monospace;
         animation-duration: 1s;
         animation-name: animate-fade-in;
         animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
@@ -64,7 +65,7 @@
         color: lightgray;
       }
       #contact-button {
-        background: #2acdb0;
+        background: #047857;
         box-shadow: 3px 3px 0px #1c1917;
         width: 150px;
         flex-shrink: 0;
@@ -127,7 +128,7 @@
       #profile-picture {
         width: 100px;
         border-radius: 100%;
-        /* box-shadow: 2px 2px 0px #2acdb0; */
+        /* box-shadow: 2px 2px 0px #047857; */
         flex-shrink: 0;
         flex-grow: 0;
         margin-right: 15px;
@@ -137,8 +138,9 @@
   <body>
     <section style="padding-top: 30px; padding-bottom: 40px">
       <div class="section-info">
-        <header>
-          <div
+        <header style="justify-content: center">
+          <img src="logo.png" width="300px" />
+          <!-- <div
             style="
               flex-grow: 1;
               display: flex;
@@ -155,7 +157,7 @@
               <h1 id="heading">MIKE DANE</h1>
               <h2 id="sub-heading">VOCAL TALENT</h2>
             </div>
-          </div>
+          </div> -->
         </header>
 
         <div>
@@ -178,58 +180,73 @@
             trust.
           </p>
           <div style="display: flex; align-items: center; flex-wrap: wrap">
-            <a id="contact-button" href="mailto: mike@mikedanemedia.com"
-              >Email Mike</a
+            <a
+              id="contact-button"
+              style="color: white"
+              href="mailto: mike@mikedanemedia.com"
+              >Contact Mike</a
             >
-            <div style="margin: 0px 15px; display: flex; align-items: center">
-              <div style="margin-right: 1rem">or join him on</div>
-              <a
-                style="text-decoration: none"
-                href="https://www.fiverr.com/gra8dane"
-                target="_blank"
-              >
-                <img src="fiverr.png" width="100px" alt="fiverr" />
-              </a>
-            </div>
           </div>
         </div>
       </div>
       <div class="section-soundcloud">
         <iframe
-          style="box-shadow: 5px 5px 0px #1c1917"
+          style="box-shadow: 5px 5px 0px #1c1917; height: 430px"
           class="soundcloud"
           width="100%"
           height="400px"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574784421&color=%232acdb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574784421&color=%23047857&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
         <div class="soundcloud-info">Commercials</div>
       </div>
     </section>
 
     <section
-      style="padding-top: 50px; background: #2d3748; padding-bottom: 75px"
+      style="
+        padding-top: 50px;
+        background: #2d3748;
+        padding-bottom: 75px;
+        align-items: start;
+      "
     >
+      <svg
+        width="100%"
+        height="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        class="wave-separator"
+        style="z-index: -1"
+      >
+        <path
+          d="M 0 10 C 374.125 43.072872417272244 374.125 43.072872417272244 748.25 26.536436208636122 C 1122.375 10 1122.375 10 1496.5 21.455000338086137 C 1870.625 32.910000676172274 1870.625 32.910000676172274 2244.75 11.561460412675078 C 2618.875 -9.787079850822117 2618.875 -9.787079850822117 2993 21.455000338086137 L 2993 150 L 0 150 Z"
+          fill="#2D3748"
+          height="10"
+          amplitude="20"
+          speed="1"
+          points="4"
+        ></path>
+      </svg>
       <div class="section-soundcloud">
         <iframe
-          style="box-shadow: 5px 5px 0px #1c1917"
+          style="box-shadow: 5px 5px 0px #1c1917; height: 550px"
           class="soundcloud"
           width="100%"
           height="400px"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574785759&color=%232acdb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574785759&color=%23047857&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
         <div class="soundcloud-info">
           Corporate Narration, eLearning, Explainers
         </div>
       </div>
-      <div class="section-info">
+      <div class="section-info" style="padding-top: 0px">
         <div>
-          <h2>Typical Projects</h2>
+          <h2 style="margin-top: 0px">Typical Projects</h2>
           <ul>
             <li>Commercials</li>
             <li>Audiobooks</li>
@@ -298,15 +315,6 @@
         <a style="color: white" href="mailto: mike@mikedanemedia.com"
           >mike@mikedanemedia.com</a
         >
-      </div>
-      <div>
-        <a
-          style="text-decoration: none"
-          href="https://www.fiverr.com/gra8dane"
-          target="_blank"
-        >
-          <img src="fiverr.png" width="100px" alt="fiverr" />
-        </a>
       </div>
     </section>
   </body>
