@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        color: white;
+        margin: 0px;
+        background: #1a202c;
+        font-family: "Source Code Pro";
+      }
+      div {
+        box-sizing: border-box;
+      }
+      section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+      }
+
+      .section-info {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 300px;
+        max-width: 500px;
+        padding: 10px 35px;
+      }
+      .section-soundcloud {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 300px;
+        min-width: 350px;
+        max-width: 750px;
+        width: 750px;
+        padding: 10px 35px;
+      }
+      .soundcloud {
+        border-radius: 3px;
+        animation-duration: 0.5s;
+        animation-name: animate-pop;
+        animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+      }
+      #contact-button {
+        background: #2acdb0;
+        box-shadow: 3px 3px 0px #1c1917;
+        width: 150px;
+        text-decoration: none;
+        height: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 1;
+        font-weight: bold;
+        font-size: 18px;
+        color: #1c1917;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      #heading {
+        font-size: 50px;
+        margin: 0px;
+      }
+      #sub-heading {
+        margin: 0px;
+        font-size: 24px;
+      }
+      .wave-separator {
+        position: absolute;
+        z-index: -1;
+        top: -50px;
+      }
+      #testamonials ul {
+        max-width: 800px;
+      }
+      #testamonials li {
+        font-style: italic;
+        margin: 15px;
+      }
+      @keyframes animate-pop {
+        0% {
+          opacity: 0;
+          transform: translate(0px, -35px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: scale(1, 1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section-info">
+        <header>
+          <div style="flex-grow: 1">
+            <h1 id="heading">MIKE DANE</h1>
+            <h2 id="sub-heading">VOCAL TALENT</h2>
+          </div>
+        </header>
+
+        <div>
+          <p>
+            Mike is a trusted Voiceover professional with 25+ years of success
+            in marketing and presenting well-known, global brands. Mike took
+            that broad business experience and evolved it into a voiceover
+            career and business. As a result, you get a seasoned professional
+            and common-sense communicator to understand your message and deliver
+            it effectively.
+          </p>
+          <p>
+            Mike produces crisp, clear audio in his professional studio,
+            enabling him to meet technical standards for the most demanding
+            projects.
+          </p>
+          <p>
+            Mike takes pride in being responsive and easy to work with, always
+            working to build relationships with clients once he's earned their
+            trust.
+          </p>
+          <a id="contact-button" href="mailto: mike@mikedanemedia.com"
+            >Contact Mike</a
+          >
+        </div>
+      </div>
+      <div class="section-soundcloud">
+        <iframe
+          style="box-shadow: 5px 5px 0px #1c1917"
+          class="soundcloud"
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574784421&color=%232acdb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+      </div>
+    </section>
+
+    <section
+      style="padding-top: 50px; background: #2d3748; padding-bottom: 75px"
+    >
+      <svg
+        width="100%"
+        height="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        class="wave-separator"
+      >
+        <path
+          d="M 0 10 C 367.5 43.072872417272244 367.5 43.072872417272244 735 26.536436208636122 C 1102.5 10 1102.5 10 1470 26.536436208636122 L 1470 150 L 0 150 Z"
+          fill="#2D3748"
+          height="10"
+          amplitude="20"
+          speed="1"
+          points="2"
+        ></path>
+      </svg>
+      <div class="section-soundcloud">
+        <iframe
+          style="box-shadow: 5px 5px 0px #1c1917"
+          class="soundcloud"
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574785759&color=%232acdb0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+      </div>
+      <div class="section-info">
+        <div>
+          <h2>Typical Projects</h2>
+          <ul>
+            <li>Commercials</li>
+            <li>Audiobooks</li>
+            <li>eLearning/Training</li>
+            <li>Explainer videos</li>
+            <li>
+              Corporate narration such as benefits enrollment, employee
+              onboarding, corporate overviews, new product offerings
+            </li>
+            <li>Podcast intro/outro</li>
+            <li>On Hold prompts / IVR</li>
+            <li>Whiteboard animation</li>
+            <p>... and much more</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section style="background: #4a5568">
+      <svg
+        width="100%"
+        height="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        class="wave-separator"
+        style="z-index: 0"
+      >
+        <path
+          d="M 0 20 C 735 48.32293673094284 735 48.32293673094284 1470 34.16146836547142 L 1470 150 L 0 150 Z"
+          fill="#4A5568"
+          height="20"
+          amplitude="20"
+          speed="1"
+          points="1"
+        ></path>
+      </svg>
+      <div
+        id="testamonials"
+        style="padding-top: 40px; position: relative; z-index: 1; padding: 35px"
+      >
+        <h2>What Clients are Saying</h2>
+        <ul>
+          <li>
+            "Very professional and easy communication. Took great care to
+            accommodate all feedback and delivered the final product in great
+            time. Very pleased with the final result."
+          </li>
+          <li>
+            "Great audio quality and timeliness, this is my second time ordering
+            from gra8dane and I can recommend his work!"
+          </li>
+          <li>
+            "Another great experience working with Mike. Very responsive to
+            feedback and very happy with the final result."
+          </li>
+          <li>
+            "This is our second job with gra8dane and we are very happy. Great
+            turnaround time, love the quality of the recording, and quick
+            replies to questions. If we have more needs, we will be back... we
+            like this guy!"
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div style="padding: 25px">mike@mikedanemedia.com</div>
+    </section>
+  </body>
+</html>
+
+<!-- <iframe
+style="box-shadow: 5px 5px 0px #1c1917"
+class="soundcloud"
+width="100%"
+height="400px"
+scrolling="no"
+frameborder="no"
+allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1574785759&color=%23265721&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+></iframe> -->
